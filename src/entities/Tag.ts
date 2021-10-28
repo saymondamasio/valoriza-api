@@ -1,30 +1,26 @@
-import { Exclude } from 'class-transformer'
+import { Expose } from 'class-transformer'
 import {
   Column,
+  CreateDateColumn,
   Entity,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm'
 
-@Entity('users')
-export class User {
+@Entity('tags')
+export class Tag {
   @PrimaryGeneratedColumn('uuid')
   readonly id: string
 
   @Column()
   name: string
 
-  @Column()
-  email: string
+  @Expose({ name: 'name_custom' })
+  nameCustom(): string {
+    return `#${this.name}`
+  }
 
-  @Exclude()
-  @Column()
-  password: string
-
-  @Column({ default: false })
-  admin: boolean
-
-  @UpdateDateColumn()
+  @CreateDateColumn()
   created_at: Date
 
   @UpdateDateColumn()
