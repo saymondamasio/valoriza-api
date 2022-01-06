@@ -1,0 +1,35 @@
+{
+  "name": "Valoriza",
+  "description": "Essa API tem como objetivo elogiar as pessoas, tem como funcionalidade a criação e autenticação de um novo usuário, a adição de um novo elogio para determinado usuário e a listagem de elogios recebidos.",
+  "short_description": "Uma api feita exercitar seus elogios",
+  "techs": [
+    {
+      "name": "Node.js",
+      "url": "https://nodejs.org/"
+    },
+    {
+      "name": "Typescript",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Express.js",
+      "url": "https://expressjs.com/"
+    },
+    {
+      "name": "SQLite",
+      "url": "https://www.sqlite.org/"
+    },
+    {
+      "name": "TypeORM",
+      "url": "https://typeorm.io/#/"
+    },
+    {
+      "name": "JWT",
+      "url": "https://jwt.io/"
+    },
+    {
+      "name": "Bcryptjs",
+      "url": "https://handlebarsjs.com/"
+    }
+  ]
+}
